@@ -1,0 +1,109 @@
+.contact-component{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location-contact-container {
+  margin-top: var(--ss-2x);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns:  40% 50%;
+  gap: 10%;
+  z-index: 0;
+  width: 100%;
+}
+.location-container{
+  border-radius: 10%;
+  aspect-ratio: 1/1;
+  max-height: 400px;
+}
+
+.container.contact_container {
+  width: 100%;
+}
+
+.contact{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--ss-2x);
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: var(--ss-4x);
+  box-shadow: var(--shawdow-medium);
+}
+.label-input{
+  color: var(--grey-600);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: var(--ss-0_5x);
+  width: 100%;
+}
+.label-input>label{
+  margin-bottom: var(--ss-0_5x);
+}
+input,textarea{
+  background-color: var(--grey-100);
+  width: 100%;
+  padding:var(--ss-1x);
+  font-weight: 600;
+  color: var(--grey-600);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: var(--ss-1x);
+  
+}
+input::placeholder{
+  color: var(--grey-300);
+}
+textarea::placeholder{
+  color: var(--grey-300);
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width:820px){
+  .contact-form{
+      padding: var(--ss-3x);
+      width: var(--m-screen);
+  }
+}
+@media (max-width:480px){
+  .contact-form{
+      padding: var(--ss-2x);
+      width: 100%;
+  }
+  .contact-container{
+    width: var(--s-screen);;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .location-contact-container {
+    grid-template-columns: 1fr;
+    gap: var(--ss-3x);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container.contact_container {
+    width: var(--container-width-sm);
+  }
+
+  .container.location-contact-container {
+    margin-bottom: 2rem;
+  }
+}

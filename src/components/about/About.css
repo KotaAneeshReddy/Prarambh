@@ -1,0 +1,139 @@
+.team > h2 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+  }
+  
+  .company_container {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+    align-items: center;
+  }
+  .company {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+  }
+  
+  .company_image {
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+    .office-image{
+        width: 100%;
+    }
+
+  
+  .company_content p {
+    margin: 0.5rem 0 0.6rem;
+    color: var(--color-light);
+    text-align: justify;
+  }
+  
+  .company_content h3 {
+    color: var(--color-primary-variant);
+  }
+  
+  .values {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+  }
+  
+  .values li {
+    margin: 0.5rem 0 0.6rem;
+  }
+  
+  .team_container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+  }
+  
+  .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .person_image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .person_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .person_info {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  li{
+    list-style: none;
+  }
+  .about-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .company_container {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  
+    .team_container {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  
+    .person {
+      width: 50%;
+      margin: 2rem auto 4rem;
+    }
+  
+    .company {
+      width: 50%;
+      margin: 2rem auto 4rem;
+    }
+  
+    .company_content p {
+      margin: 1rem 0 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .company {
+      width: 65%;
+      margin: 0 auto 3rem;
+    }
+    .person {
+      width: 65%;
+      margin: 0 auto 3rem;
+    }
+  
+    .company_content {
+      text-align: justify;
+    }
+  
+    .company_content p {
+      margin: 1.5rem 0;
+    }
+  
+    #second-image {
+      display: none;
+    }
+  }
+  

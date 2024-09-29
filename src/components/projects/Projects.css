@@ -1,0 +1,50 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.project-carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+.project-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+.project-arrow {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary-400);
+    
+    z-index: 1;
+  }
+.project-arrow:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.project-arrow-left {
+    left: 0;
+}
+  
+.project-arrow-right {
+    right: 0;
+}
+.project-indicators{
+    display: flex;
+    position: absolute;
+    bottom: 2px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width:480px){
+}
