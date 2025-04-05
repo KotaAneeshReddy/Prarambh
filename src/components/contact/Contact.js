@@ -75,14 +75,6 @@ function Contact() {
           console.log("FAILED...", error.text);
         }
       );
-      // .then(
-      //   () => {
-      //     alert("SUCCESS!");
-      //   },
-      //   (error) => {
-      //     console.log("FAILED...", error.text);
-      //   }
-      // );
   };
 
   const changeHandler = (event) => {
@@ -92,13 +84,6 @@ function Contact() {
   const submitHandler = (event) => {
     event.preventDefault();
     const config = {
-      // SecureToken: '70d9e60a-af6c-4c44-a9f3-c23553ac26de',
-      // // SecureToken:'0e61bd6d-152f-4651-9b42-c0499c29e58f',
-      // To : 'kotaaneeshreddy@gmail.com',
-      // From : formState.email,
-      // Subject : "Regarding GMR Automation",
-      // Body : `Name:${formState.name} Email:${formState.email} PhoneNumber:${formState.number} Message:${formState.message}`
-
       Host: "smtp.elasticemail.com",
       Username: "prarambhitsolutions@gmail.com",
       Password: "9A9F3EDB6AAB3B54897B7A4C10F1BC3B8DAB",
@@ -118,63 +103,12 @@ function Contact() {
     <section className="contact-component container" id="contact-section">
         <h1 className="heading">Contact</h1>
         <div className="location-contact-container">
-          {/* <div className="container location-container">
-            <iframe
-              title="Office Location"
-              width="100%"
-              height="400"
-              frameBorder="0"
-              style={{ border: 0 }}
-              src={`https://www.google.com/maps/embed/v1/place?q=YOUR_LATITUDE,YOUR_LONGITUDE&key=YOUR_GOOGLE_MAPS_API_KEY`}
-              allowFullScreen
-            ></iframe>
-          </div> */}
 
           <div
             id="map"
             className="location-container"
           ></div>
           <div className="contact_container">
-            {/* <form action="" ref={form} onSubmit={sendEmail}>
-              <input
-                type="text"
-                name="name"
-                value={formState.name || ""}
-                placeholder="Your Full Name"
-                required
-                onChange={changeHandler}
-              />
-              <input
-                type="email"
-                name="email"
-                value={formState.email || ""}
-                placeholder="Your Email"
-                required
-                onChange={changeHandler}
-              />
-              <input
-                type="number"
-                name="number"
-                value={formState.number || ""}
-                placeholder="Enter your number"
-                required
-                onChange={changeHandler}
-              />
-              <textarea
-                name="message"
-                value={formState.message || ""}
-                rows="7"
-                placeholder="Your Message"
-                required
-                onChange={changeHandler}
-              ></textarea>
-              <input
-                id="form_btn"
-                type="submit"
-                value="Send Message"
-                className="btn btn-primary"
-              />
-            </form> */}
             <form className='contact-form' action="" ref={form} onSubmit={sendEmail}>
                   <div className='label-input'>
                       <label htmlFor='full-name'>Name</label>

@@ -1,6 +1,5 @@
 import About from "./components/about/About";
 import { Home } from "./components/home/Home";
-import { ServiceCard } from "./components/serviceCard/ServiceCard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {

@@ -5,9 +5,6 @@ import { faGear, faLightbulb, faUser } from '@fortawesome/free-solid-svg-icons'
 
 
 import Choose from '../../assets/images/WhyChooseUs.jpg'
-import TailoredSolution from '../../assets/images/tailoredSolution.jpg'
-import InnovativeApproach from '../../assets/images/innovativeApproach.jpg'
-import ClientCentricServices from '../../assets/images/clientCentric.jpg'
 
 export const ChooseUs = () => {
   return (

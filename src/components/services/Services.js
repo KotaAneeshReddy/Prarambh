@@ -2,7 +2,6 @@ import React from 'react'
 import './Services.css'
 import { ServiceCard } from '../serviceCard/ServiceCard'
 import { serviceData } from '../../data/ServiceData'
-import { motion } from 'framer-motion'
 
 export const Services = () => {
   return (

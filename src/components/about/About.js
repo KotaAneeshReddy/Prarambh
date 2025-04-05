@@ -63,7 +63,7 @@ const Knowmore = () => {
               </div>
             </div>
           </div>
-          <div className="company">
+          <div id="company-image2" className="company">
             <div className="company_image">
               <img
                 id="second-image"
@@ -71,39 +71,6 @@ const Knowmore = () => {
                 src={Office2}
                 alt="Company"
               />
-            </div>
-          </div>
-        </div>
-
-        <div className="team">
-          <h2>OUR TEAM</h2>
-          <div className="container team_container">
-            <div className="person">
-              <div className="person_image">
-                <img src={Person} alt="Person1.jpg"></img>
-              </div>
-              <div className="person_info">
-                <h3>XYZ</h3>
-                <h5>Designer</h5>
-              </div>
-            </div>
-            <div className="person">
-              <div className="person_image">
-                <img src={Person} alt="Person1.jpg"></img>
-              </div>
-              <div className="person_info">
-                <h3>XYZ</h3>
-                <h5>Senior Software Engineer</h5>
-              </div>
-            </div>
-            <div className="person">
-              <div className="person_image">
-                <img src={Person} alt="Person1.jpg"></img>
-              </div>
-              <div className="person_info">
-                <h3>XYZ</h3>
-                <h5>Digital Marketing Specialist</h5>
-              </div>
             </div>
           </div>
         </div>
